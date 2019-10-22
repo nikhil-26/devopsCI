@@ -11,7 +11,7 @@ html_data=cgi.FieldStorage()
 #only looking for form data and those variables data as well
 select=html_data.getvalue('s')
 
-if select == "s":
+if select == "whp" :
      print("<meta http-equiv='refresh'  content='1;url=http://3.86.241.155/whp.html' >")
 
 else :
