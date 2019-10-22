@@ -9,11 +9,10 @@ print("")
 
 html_data=cgi.FieldStorage()
 #only looking for form data and those variables data as well
-username=html_data.getvalue('u')
-password=html_data.getvalue('p')
+select=html_data.getvalue('s')
 
-if username == 'adhoc' and password == 'devops' :
-     print("<meta http-equiv='refresh'  content='1;url=http://3.86.241.155/service.html' >")
+if select == "s":
+     print("<meta http-equiv='refresh'  content='1;url=http://3.86.241.155/whp.html' >")
 
 else :
-    print("bye nikhil")
+     print("<meta http-equiv='refresh'  content='1;url=http://3.86.241.155/whm.html' >")
